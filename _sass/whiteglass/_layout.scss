@@ -57,7 +57,7 @@
   padding: $spacing-unit 0;
   font-size: 15px;
   color: $grey-color;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -81,14 +81,7 @@
     text-decoration: none;
   }
 
-  > li {
-    margin-bottom: $spacing-unit * 2;
-
-    &:not(:first-child) {
-      border-top: 4px solid $grey-color-light;
-      padding-top: $spacing-unit * 2;
-    }
-  }
+  
 }
 
 .post-archives {
