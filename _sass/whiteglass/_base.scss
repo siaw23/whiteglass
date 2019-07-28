@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
   code {
     font-size: inherit;
+
   }
 }
 
@@ -151,10 +152,12 @@ hr {
 pre,
 code {
   font-family: $monospace-font-family;
-  font-size: 13px;
-  border: 1px solid $grey-color-light;
-  border-radius: 0;
+  font-size: 14px;
+  border: 0px solid $grey-color-light;
+  border-radius: 20px;
   background-color: lighten($grey-color-light, 5%);
+  font-weight: 900;
+  color: #800000;
 }
 
 code {
