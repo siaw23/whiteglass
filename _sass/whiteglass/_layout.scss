@@ -208,27 +208,31 @@
  */
 .pagination {
   padding: $spacing-unit / 2 0;
-  border-top: 1px solid $grey-color-light;
-  border-bottom: 1px solid $grey-color-light;
+  //border-top: 1px solid $grey-color-light;
+  //border-bottom: 1px solid $grey-color-light;
   text-align: center;
-  @extend %clearfix;
+  //@extend %clearfix;
 
   a {
-    &,
+    color: $brand-color;
+    text-decoration: none;
+    border-bottom: 3px solid #800000;
     &:visited {
       color: $grey-color;
     }
 
     &:hover {
-      color: $brand-color;
+      //color: $brand-color;
     }
   }
 
   .previous {
     float: left;
+    border-bottom: 3px solid #800000;
   }
 
   .next {
     float: right;
+    border-bottom: 3px solid #800000;
   }
 }
