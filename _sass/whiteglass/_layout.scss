@@ -81,7 +81,7 @@
     text-decoration: none;
   }
 
-  
+
 }
 
 .post-archives {
@@ -235,4 +235,45 @@
     float: right;
     border-bottom: 3px solid #800000;
   }
+}
+
+
+// Hire Me alert
+
+.alert-primary {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #76c589;
+  border-top-color: rgb(195, 230, 203);
+  border-right-color: rgb(195, 230, 203);
+  border-bottom-color: rgb(195, 230, 203);
+  border-left-color: rgb(195, 230, 203);
+}
+
+.alert {
+  position: relative;
+  padding-top: 0.75rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+
+  border-top-color: transparent;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: transparent;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: transparent;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-radius: .25rem;
 }
