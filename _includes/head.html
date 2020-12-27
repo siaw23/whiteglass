@@ -11,6 +11,7 @@
   {% endif %}
 
   {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
+  {% assign image = page.image %}
   {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
