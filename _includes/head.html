@@ -4,8 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
-  {% assign title = page.title | default: site.title | escape %}
+  {% if page.layout == 'home' %}
+    {% assign title = 'Emmanuel Hayford · Ruby on Rails · JavaScript · Web Technologies' %}
+  {% else %}
+    {% assign title = page.title | default: site.title | escape %}
+  {% endif %}
 
   {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
   {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
