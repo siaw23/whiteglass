@@ -4,11 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  {% if site.url == "https://emmanuelhayford.com" %}
-  {% assign title = Emmanuel Hayford. Blogs on programming Ruby, JavaScript and web technologies." %}
+  {% if site.url == 'https://emmanuelhayford.com' %}
+  {% assign title = 'Emmanuel Hayford. Blogs on programming Ruby, JavaScript and web technologies.' %}
   {% else %}
   {% assign title = page.title | default: site.title | escape %}
-  {% end %}
+  {% endif %}
 
   {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
   {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
