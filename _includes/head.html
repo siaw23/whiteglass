@@ -3,7 +3,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   {% if page.layout == 'home' %}
     {% assign title = 'Emmanuel Hayford · Ruby · JavaScript · Web Technologies' %}
   {% else %}
@@ -38,7 +37,13 @@
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:url" content="{{ canonical }}" />
   <meta property="og:image" content="{{ image }}" />
-  <meta property="og:type" content="article" />
+
+  {% if page.layout == 'home' %}
+    <meta property="og:type" content="website" />
+  {% else %}
+    <meta property="og:type" content="article" />
+  {% end %}
+
 
   <meta name="twitter:card"  content="summary_large_image">
 
