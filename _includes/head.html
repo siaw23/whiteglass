@@ -10,7 +10,7 @@
   {% endif %}
 
   {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
-  {% assign image = page.image %}
+  {% assign og_image = page.og_image %}
   {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
@@ -36,7 +36,7 @@
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:url" content="{{ canonical }}" />
-  <meta property="og:image" content="{{ image }}" />
+  <meta property="og:image" content="{{ og_image }}" />
 
   {% if page.layout == 'home' %}
     <meta property="og:type" content="website" />

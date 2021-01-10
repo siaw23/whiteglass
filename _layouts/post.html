@@ -16,13 +16,6 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
 
-    {% if page.image %}
-      <img itemprop="image" src="{{ page.image }}" alt="{{ page.image_alt }}">
-    {% endif %}
-
-    </br>
-    </br>
-
     {{ content }}
 
     {% include subscribe.html %}
