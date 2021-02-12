@@ -4,15 +4,16 @@
   {% include head.html %}
 
   <body>
-    {% unless page.layout == 'home' %}
-      {% include adsense.html %}
-    {% endunless %}
+
 
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
 
+      {% unless page.layout == 'home' %}
+        {% include adsense.html %}
+      {% endunless %}
 
         <br>
 
