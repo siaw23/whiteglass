@@ -5,12 +5,16 @@
 
   <body>
 
+    {% unless page.layout == 'home' %}
+      {% include adsense.html %}
+    {% end %}
+
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
 
-        {% include adsense.html %}
+
         <br>
 
         {{ content }}
